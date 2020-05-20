@@ -20,11 +20,13 @@
     <div v-show="is_hover" class="action_container">
       <div class="top">
         <div class="avatar_container">
-          <a target="_blank" rel="original post" :href="source_tweet_post_url">
+          <a target="_blank" rel="original post" :href="tweet.tweet_url">
             <img class="avatar" :src="tweet.profile_images_url" />
           </a>
         </div>
-        <span class="author_name">{{ tweet.author_name }}</span>
+        <a target="_blank" rel="original post" :href="tweet.tweet_url">
+          <span class="author_name">{{ tweet.author_name }}</span>
+        </a>
       </div>
 
       <div class="bottom">

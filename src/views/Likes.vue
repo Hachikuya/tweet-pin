@@ -50,18 +50,19 @@ export default {
     }
   },
   created() {
-    EventService.getLikesList()
-      .then(response => {
-        this.tweets = response.data // the data starts from the oldest
-        this.tweets = this.tweets.reverse() // sort data from latest
-        this.tweets = this.tweets.map((element, index) => {
-          element.id = index // add id = index to every tweet data
-          return element
-        })
-      })
-      .catch(error => {
-        console.log('There was an error:' + error.response)
-      })
+    // EventService.getLikesList()
+    //   .then(response => {
+    //     this.tweets = response.data // the data starts from the oldest
+    //     this.tweets = this.tweets.reverse() // sort data from latest
+    //     this.tweets = this.tweets.map((element, index) => {
+    //       element.id = index // add id = index to every tweet data
+    //       return element
+    //     })
+    //   })
+    //   .catch(error => {
+    //     console.log('There was an error:' + error.response)
+    //   })
+    this.tweets = EventService.get_demo_data().data
     window.addEventListener('resize', this.resize_handler())
   },
   destroyed() {
@@ -75,5 +76,6 @@ export default {
 .main_column {
   margin: auto;
   padding-top: 36px;
+  padding-bottom: 36px;
 }
 </style>
