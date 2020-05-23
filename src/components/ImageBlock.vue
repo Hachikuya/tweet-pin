@@ -105,7 +105,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+a {
+  color: transparent;
+}
 .thumbnail_container {
   position: absolute;
   overflow: hidden;
@@ -130,14 +133,13 @@ export default {
 }
 .top {
   position: absolute;
-  width: calc(100% - 36px);
+  display: flex;
   height: 36px;
   margin: 18px 18px 0px 18px;
   border-radius: 18px;
 }
 .avatar_container {
-  position: absolute;
-  left: 0px;
+  margin-right: 10px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -154,8 +156,6 @@ export default {
   height: 36px;
 }
 .author_name {
-  position: absolute;
-  left: 48px;
   margin: 0px;
   line-height: 36px;
   height: 36px;
