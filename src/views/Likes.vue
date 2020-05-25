@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>This page demonstrates the image layout.</h1>
+
     <div class="main_column" :style="main_column_width_style">
       <ImageBlock
         v-for="tweet in tweets"
@@ -78,5 +79,15 @@ export default {
   margin: auto;
   padding-top: 36px;
   padding-bottom: 36px;
+}
+.source_code_button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border-color: #1da1f2;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #1da1f2;
 }
 </style>

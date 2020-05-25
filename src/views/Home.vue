@@ -19,15 +19,24 @@
       </div>
       <div class="nav_button">
         <router-link to="/about">
-          <div class="about">
+          <div class="button_container">
             <button class="about_button">About</button>
           </div>
         </router-link>
         <router-link to="/likes">
-          <div class="demo_page">
+          <div class="button_container">
             <button class="about_button">Demo Page</button>
           </div>
         </router-link>
+        <div class="button_container">
+          <a
+            target="_blank"
+            rel="demo page sorce code"
+            href="https://github.com/Hachikuya/tweet-pin"
+          >
+            <button class="about_button">Source Code</button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -73,10 +82,7 @@ export default {
   flex-direction: row;
   justify-content: center;
 }
-.about {
-  margin: 0px 20px;
-}
-.demo_page {
+.button_container {
   margin: 0px 20px;
 }
 .about_button {
