@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>This page demonstrates the image layout.</h1>
     <div class="main_column" :style="main_column_width_style">
       <ImageBlock
         v-for="tweet in tweets"

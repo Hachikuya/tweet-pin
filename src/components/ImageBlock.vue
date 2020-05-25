@@ -164,6 +164,7 @@ a {
   -webkit-text-fill-color: white;
   -webkit-text-stroke: 0.2px white;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .author_name:hover {
   cursor: pointer;

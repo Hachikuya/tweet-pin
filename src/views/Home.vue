@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-    <div class="disclaimer">
-      <span>This page is under development</span>
-    </div>
     <div class="main_column">
       <div class="logo_container">
         <div class="main_logo_container">
@@ -27,7 +24,7 @@
           </div>
         </router-link>
         <router-link to="/likes">
-          <div class="demo page">
+          <div class="demo_page">
             <button class="about_button">Demo Page</button>
           </div>
         </router-link>
@@ -55,23 +52,20 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-.disclaimer {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  color: #333;
+  max-width: 600px;
+  width: 80%;
+  margin: 0px 30px;
 }
 .logo_container {
   display: flex;
   flex-direction: column;
 }
 .main_logo {
-  height: 250px;
+  width: 45%;
 }
 .main_logo_text {
   padding-top: 30px;
-  width: 350px;
+  width: 60%;
 }
 .nav_button {
   margin-top: 60px;
@@ -79,8 +73,13 @@ export default {
   flex-direction: row;
   justify-content: center;
 }
-.about_button {
+.about {
   margin: 0px 20px;
+}
+.demo_page {
+  margin: 0px 20px;
+}
+.about_button {
   color: #fff;
   font-size: 20px;
   font-weight: 700;

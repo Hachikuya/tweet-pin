@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div class="disclaimer">
+      <span>This page is under development</span>
+    </div>
     <div id="nav" v-if="!is_root_page">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
@@ -30,6 +33,7 @@ export default {
 
 #nav {
   padding: 30px;
+  padding-top: 50px;
 }
 
 #nav a {
@@ -44,5 +48,14 @@ export default {
 
 body {
   margin: 0 !important;
+}
+
+.disclaimer {
+  position: fixed;
+  width: 100%;
+  padding: 0px 5px;
+  background-color: #1da1f2;
+  color: #fff;
+  z-index: 2;
 }
 </style>

@@ -96,10 +96,10 @@ export default {
 }
 .overlay_background {
   left: 0px;
-  top: 0px;
+  top: 22px;
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 22px);
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
 }
